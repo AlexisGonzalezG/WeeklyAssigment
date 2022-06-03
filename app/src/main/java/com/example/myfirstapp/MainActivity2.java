@@ -136,9 +136,11 @@ public class MainActivity2 extends AppCompatActivity {
        Pattern lowwercase = Pattern.compile("[a-z]");
        Pattern digitCase = Pattern.compile("[0-9]");
 
+       boolean validatePass = true;
+
        if(!lowwercase.matcher(password).find()){
            tv_1.setTextColor(Color.RED);
-           return false;
+           validatePass = false;
        }
        else{
            tv_1.setTextColor(Color.WHITE);
@@ -146,7 +148,7 @@ public class MainActivity2 extends AppCompatActivity {
 
        if(!uppercase.matcher(password).find()){
            tv_2.setTextColor(Color.RED);
-           return false;
+           validatePass = false;
        }
        else{
            tv_2.setTextColor(Color.WHITE);
@@ -154,7 +156,7 @@ public class MainActivity2 extends AppCompatActivity {
 
        if(!digitCase.matcher(password).find()){
            tv_3.setTextColor(Color.RED);
-           return false;
+           validatePass = false;
        }
        else{
            tv_3.setTextColor(Color.WHITE);
@@ -162,7 +164,7 @@ public class MainActivity2 extends AppCompatActivity {
 
        if(pass1.length() < 8){
            tv_4.setTextColor(Color.RED);
-           return false;
+           validatePass = false;
        }
        else{
            tv_4.setTextColor(Color.WHITE);
@@ -170,15 +172,17 @@ public class MainActivity2 extends AppCompatActivity {
 
        /*Log.d(LOG_TAG, "ALEX:" + match ); LOGS*/
 
-       if(pass1.getText().toString().equals(pass2.getText().toString())){
+
+
+       if(pass1.getText().toString().equals(pass2.getText().toString()) && !pass1.getText().toString().matches("")){
            tv_5.setTextColor(Color.WHITE);
        }
        else{
            tv_5.setTextColor(Color.RED);
-           return false;
+           validatePass = false;
        }
 
-       return true;
+       return validatePass;
 
    }
 
