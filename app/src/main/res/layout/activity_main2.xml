@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#158fcc"
+    tools:context=".MainActivity2">
+
+
+    <TextView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:id="@+id/title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="CREATE AN ACCOUNT"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title2"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:drawableLeft="@drawable/email"
+        android:hint="EMAIL ADDRESS"
+        android:gravity="center"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:errorEnabled="true"
+        />
+
+    <EditText
+        android:id="@+id/pass1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:drawableLeft="@drawable/password"
+        android:gravity="center"
+        android:hint="CREATE PASSWORD"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:password="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+
+        />
+
+    <EditText
+        android:id="@+id/pass2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pass1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:drawableLeft="@drawable/password"
+        android:hint="REPEAT PASSWORD"
+        android:padding="20dp"
+        android:password="true"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:inputType="textPassword"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pass2"
+        android:gravity="center"
+        android:text="a-z"
+        android:textColor="#ff3333"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:id="@+id/tv_1"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_1"
+        android:gravity="center"
+        android:text="A-Z"
+        android:textColor="#ff3333"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/tv_2"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_2"
+        android:gravity="center"
+        android:text="0-9"
+        android:textColor="#ff3333"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/tv_3"
+        />
+
+    <TextView
+        android:id="@+id/tv_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_3"
+        android:gravity="center"
+        android:text="8 characters"
+        android:textColor="#ff3333"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_4"
+        android:gravity="center"
+        android:text="Repeat password"
+        android:textColor="#ff3333"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/button_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pass2"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="201dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:drawablePadding="20dp"
+        android:hint="SAVE"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20dp"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>
