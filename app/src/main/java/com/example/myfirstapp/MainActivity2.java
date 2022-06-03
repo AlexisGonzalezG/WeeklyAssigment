@@ -170,10 +170,6 @@ public class MainActivity2 extends AppCompatActivity {
            tv_4.setTextColor(Color.WHITE);
        }
 
-       /*Log.d(LOG_TAG, "ALEX:" + match ); LOGS*/
-
-
-
        if(pass1.getText().toString().equals(pass2.getText().toString()) && !pass1.getText().toString().matches("")){
            tv_5.setTextColor(Color.WHITE);
        }
